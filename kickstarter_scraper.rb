@@ -1,5 +1,6 @@
 # require libraries/modules here
 require "nokogiri"
+require "pry"
 
 def create_project_hash
   # write your code here
@@ -8,7 +9,7 @@ def create_project_hash
   kickstarter = Nokogiri::HTML(html)
   #sets kickstarter equal to NodeSet converted from html string
   
-  
+  binding.pry
   
   
 end
