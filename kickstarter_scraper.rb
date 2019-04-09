@@ -8,6 +8,10 @@ def create_project_hash
   #reads kickstarter.html and sets equal to html string
   kickstarter = Nokogiri::HTML(html)
   #sets kickstarter equal to NodeSet converted from html string
+  projects = {}
+  kickstarter.css("li.project.grid_4").each do |project|
+    projects[project] = {}
+  end
   
   binding.pry
   
